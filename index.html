@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRM МБЗ | Первые 5 заказов ГНБ</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Основная навигация">
+        <div class="brand">
+          <img class="brand-logo" src="./assets/mbz-logo.svg" alt="Логотип МБЗ" />
+          <div>
+            <strong>CRM МБЗ</strong>
+            <span>ГНБ · бентонит · первые 5 заказов</span>
+          </div>
+        </div>
+
+        <nav class="nav-list" id="navList">
+          <button class="nav-item is-active" data-view="ceo">⌂ <span>Панель ГД</span></button>
+          <button class="nav-item" data-view="firstOrders">★ <span>Первые 5 заказов</span></button>
+          <button class="nav-item" data-view="clients">▦ <span>Клиенты ГНБ</span></button>
+          <button class="nav-item" data-view="objects">⌖ <span>Объекты ГНБ</span></button>
+          <button class="nav-item" data-view="pipeline">▥ <span>Воронка</span></button>
+          <button class="nav-item" data-view="calls">☎ <span>Звонки</span></button>
+          <button class="nav-item" data-view="whatsapp">☏ <span>WhatsApp</span></button>
+          <button class="nav-item" data-view="emails">✉ <span>Письма</span></button>
+          <button class="nav-item" data-view="offers">₽ <span>КП</span></button>
+          <button class="nav-item" data-view="samples">◫ <span>Образцы</span></button>
+          <button class="nav-item" data-view="tests">✓ <span>Испытания</span></button>
+          <button class="nav-item" data-view="orders">▤ <span>Заказы</span></button>
+          <button class="nav-item" data-view="settings">⚙ <span>Настройки CRM</span></button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <span>Промышленный контур</span>
+          <strong>Этапы 2.1–2.5</strong>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">ООО «Мостовской Бентонитовый Завод»</p>
+            <h1 id="viewTitle">Панель генерального директора</h1>
+          </div>
+          <div class="topbar-actions">
+            <label class="search">
+              <span>⌕</span>
+              <input id="globalSearch" type="search" placeholder="Поиск: клиент, объект, ЛПР, КП, заказ" />
+            </label>
+            <button class="primary-button" id="quickCreate">+ Создать</button>
+            <button class="secondary-button" id="importExcel">Импорт Excel</button>
+            <button class="secondary-button" id="exportExcel">Экспорт Excel</button>
+            <input id="excelFileInput" type="file" accept=".xlsx,.xls,.csv" hidden />
+            <input id="clientExcelFileInput" type="file" accept=".xlsx,.xls,.csv" hidden />
+            <input id="backupFileInput" type="file" accept=".json" hidden />
+            <button class="icon-button" id="resetData" title="Сбросить демо-данные">↺</button>
+          </div>
+        </header>
+
+        <section class="filters" aria-label="Фильтры">
+          <select id="regionFilter">
+            <option value="all">Все регионы</option>
+          </select>
+          <select id="clientTypeFilter">
+            <option value="all">Все типы клиентов</option>
+          </select>
+          <select id="stageFilter">
+            <option value="all">Все статусы</option>
+          </select>
+          <label class="toggle">
+            <input id="riskOnly" type="checkbox" />
+            <span>Только риски</span>
+          </label>
+        </section>
+
+        <section id="viewRoot" class="view-root"></section>
+      </main>
+
+      <aside class="detail-panel" id="detailPanel">
+        <div class="detail-empty">
+          <strong>Связанная карточка</strong>
+          <span>Выберите клиента, объект, образец или заказ, чтобы увидеть всю цепочку продажи ГНБ.</span>
+        </div>
+      </aside>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  </body>
+</html>
