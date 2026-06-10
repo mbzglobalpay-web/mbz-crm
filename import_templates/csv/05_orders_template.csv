@@ -1,0 +1,2 @@
+order_id,client_id,object_id,sample_id,test_id,offer_id,order_number,order_status,product,package_type,quantity_tons,unit_price_rub,total_amount_rub,payment_status,delivery_status,planned_ship_date,actual_ship_date,warehouse,carrier,notes
+O-YFO-001,C-YFO-002,G-YFO-002,S-YFO-002,T-YFO-001,CO-YFO-001,ЗК-YFO-001,Согласование,BentoHDD Premium,мешок 25 кг,96,47917,4600000,Счет не выставлен,Резерв склада,2026-07-10,,Склад МБЗ,ТК по согласованию,Пример заказа из цепочки объект-образец-испытание-КП

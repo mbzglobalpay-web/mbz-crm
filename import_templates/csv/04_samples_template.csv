@@ -1,0 +1,3 @@
+sample_id,client_id,object_id,product,batch_number,quantity_kg,purpose,status,sent_date,received_date,carrier,tracking_number,recipient_name,responsible_manager,feedback_days,next_step,linked_test_id,linked_offer_id,linked_order_id,notes
+S-YFO-001,C-YFO-001,G-YFO-001,MBZ HDD Standard,STD-06-10,25,Полевое тестирование,Отправлен,2026-06-10,,СДЭК,SD-100200,Иван Петров,Анна Сергеева,0,Подтвердить получение,,,,
+S-YFO-002,C-YFO-002,G-YFO-002,BentoHDD Premium,BP-06-11,30,Сравнение с текущим поставщиком,Получен клиентом,2026-06-11,2026-06-13,ПЭК,PEK-300400,Алексей Иванов,Игорь Колесников,2,Получить обратную связь,T-YFO-001,,,
